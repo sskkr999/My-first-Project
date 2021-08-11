@@ -1,0 +1,28 @@
+import random
+print("welcome to numbers game")
+print("game rules")
+print("you have to choose on number between 1 to 10")
+print("computer also choose number between 1 to 10")
+print("if your number is equals to computers number")
+print("you wins.......")
+print("otherwise you loose")
+print("lets start the game")
+print("maximum chances are 3")
+num=2
+print("guess the number between 1 to 10")
+while (num!=0):
+    guess=int(input("enter your guess"))
+    computer=random.randint(1,10)
+    print("you guessed:-",guess)
+    print("computer guesses:-",computer)
+    if guess==computer:
+        print("yoo.....you wins!........")
+        break
+    elif num==1:
+        print("no guess left you loose the game")
+        break
+    else:
+        print("sorry guess again")
+        num-=1
+    print(num,"guesses left")
+    
